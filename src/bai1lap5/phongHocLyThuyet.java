@@ -1,0 +1,41 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package bai1lap5;
+
+/**
+ *
+ * @author Admin
+ */
+public class phongHocLyThuyet extends phongHocSinhVien{
+    private  String mayChieu;
+
+    public phongHocLyThuyet() {
+    }
+
+    
+    public phongHocLyThuyet( String maPhong, String dayNha, double dienTich, int soBongDen,String mayChieu) {
+        super(maPhong, dayNha, dienTich, soBongDen);
+        this.mayChieu = mayChieu;
+    }
+
+     
+
+    public String isMayChieu() {
+        return mayChieu;
+    }
+
+    public void setMayChieu(String mayChieu) {
+        this.mayChieu = mayChieu;
+    }
+
+    @Override
+    public String toString() {
+        return "phongHocLyThuyet{" + "mayChieu=" + mayChieu + '}';
+    }
+    
+     public void kiemTraPhongMayTinhDTC(){
+         
+    }
+}
